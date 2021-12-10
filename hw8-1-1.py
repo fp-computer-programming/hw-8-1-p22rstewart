@@ -7,7 +7,7 @@ def grade (choice):
         return("D")
     elif choice <= 69:
         return("D+")
-   elif choice <= 72:
+    elif choice <= 72:
         return("C-")
     elif choice <= 76:
         return("C")
@@ -24,5 +24,7 @@ def grade (choice):
     elif choice <= 100:
         return("A")
 
-choice = int(input("Enter your Grade: "))
+choice = input("Enter your Grade: ")
+grade(int(choice))
+
 print(grade)
